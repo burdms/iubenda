@@ -1,0 +1,1715 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* Fonts */
+
+/* Colors */
+
+/* Other */
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("../fonts/HKGrotesk-Regular.woff") format("woff"), url("../fonts/HKGrotesk-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("../fonts/HKGrotesk-SemiBold.woff") format("woff"), url("../fonts/HKGrotesk-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("../fonts/HKGrotesk-Bold.woff") format("woff"), url("../fonts/HKGrotesk-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  font-family: "HK Grotesk", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3914656772vw;
+  line-height: 1.5;
+  color: #333333;
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 100vw;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2.3654916512vw;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.link {
+  position: relative;
+  transition: all 0.3s linear;
+}
+
+.button {
+  padding: 0.6957328386vw 2.0871985158vw;
+  font-weight: 600;
+  border: 0.0463821892vw solid #1cc691;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #1cc691;
+  transition: all 0.3s linear;
+}
+
+.button--reset {
+  padding: 0;
+  border: none;
+  color: #919191;
+  background-color: transparent;
+  transition: all 0.3s linear;
+}
+
+.compilance {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #cf7463;
+}
+
+.compilance-indicator {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.compilance-indicator__ring {
+  transform-origin: center;
+  transform: rotate(-90deg);
+  stroke-linecap: round;
+  stroke: #cf7463;
+  transition: all 0.3s linear;
+}
+
+.compilance__amount {
+  font-size: 1.4em;
+}
+
+.notification {
+  position: relative;
+  display: none;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.notification.active {
+  display: flex;
+}
+
+.notification--success .notification-status__icon--success {
+  display: block;
+}
+
+.notification--warning .notification-status__icon--warning {
+  display: block;
+}
+
+.notification-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8.4879406308vw;
+  background-color: #e8f9f4;
+}
+
+.notification-status__icon {
+  display: none;
+  width: 4.0816326531vw;
+  height: 4.0816326531vw;
+}
+
+.notification-status__icon--success path {
+  stroke: #1cc691;
+}
+
+.notification-status__icon--warning circle {
+  stroke: #cc6f43;
+}
+
+.notification-status__icon--warning path {
+  fill: #cc6f43;
+}
+
+.notification-content {
+  max-width: 70.9647495362vw;
+  padding: 2.319109462vw;
+}
+
+.notification__close {
+  position: absolute;
+  top: 1.2059369202vw;
+  right: 1.3450834879vw;
+  width: 1.7625231911vw;
+  height: 1.7625231911vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.8em;
+  color: #fff;
+  background-color: #cccccc;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2em;
+}
+
+.title--inner {
+  font-weight: 600;
+  font-size: 1em;
+  color: #707070;
+}
+
+.switcher {
+  position: relative;
+  width: 5.3803339518vw;
+  height: 2.7829313544vw;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.switcher input {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.switcher input:checked ~ .switcher__thumb {
+  transform: translateX(2.5046382189vw);
+}
+
+.switcher input:checked ~ .switcher__background {
+  border-color: #18ab7d;
+  background-color: #1cc691;
+}
+
+.switcher__thumb {
+  position: absolute;
+  top: 0.3014842301vw;
+  left: 0.3014842301vw;
+  z-index: 1;
+  width: 2.2263450835vw;
+  height: 2.2263450835vw;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.3s linear;
+}
+
+.switcher__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  border: 1px solid #d6d6d6;
+  background-color: #e8f9f4;
+  transition: all 0.3s linear;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.select input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.select-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  border: 1px solid #9f9f9f;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s linear;
+}
+
+.select-list.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.select-list__item {
+  padding: 0.3710575139vw;
+  transition: all 0.3s linear;
+}
+
+.select-list__item:not(:last-child) {
+  border-bottom: 1px solid #9f9f9f;
+}
+
+.select-list__item img {
+  pointer-events: none;
+}
+
+.select__item {
+  flex-grow: 1;
+}
+
+.select__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.select__arrow {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5974025974vw;
+  border-left: 1px solid #eaeaea;
+}
+
+.checkbox {
+  position: relative;
+  padding-left: 3.0148423006vw;
+}
+
+.checkbox-tooltip {
+  position: relative;
+  display: none;
+  margin-top: 1.6697588126vw;
+  margin-left: -1.9944341373vw;
+  padding: 1.2059369202vw 5.1020408163vw;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  color: #cc6f43;
+  background-color: #fff4e6;
+}
+
+.checkbox-tooltip.active {
+  display: block;
+}
+
+.checkbox-tooltip::before {
+  content: "";
+  position: absolute;
+  top: -1.0204081633vw;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 0.5102040816vw solid;
+  border-color: transparent transparent #fff4e6 #fff4e6;
+}
+
+.checkbox-tooltip__icon {
+  position: absolute;
+  top: 0.7421150278vw;
+  left: 1.2059369202vw;
+  width: 3.0148423006vw;
+  height: 3.0148423006vw;
+}
+
+.checkbox-tooltip__icon circle {
+  stroke: #cc6f43;
+}
+
+.checkbox-tooltip__icon path {
+  fill: #cc6f43;
+}
+
+.checkbox input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox input:checked ~ .checkbox__checkmark::after {
+  opacity: 1;
+}
+
+.checkbox__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.9480519481vw;
+  height: 1.9480519481vw;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+}
+
+.checkbox__checkmark::after {
+  content: "";
+  position: absolute;
+  top: 0.3710575139vw;
+  left: 0.6493506494vw;
+  width: 0.3246753247vw;
+  height: 0.6029684601vw;
+  border: solid #1cc691;
+  border-width: 0 0.185528757vw 0.185528757vw 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.checkbox__label {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox__more {
+  color: #636262;
+  cursor: pointer;
+}
+
+.checkbox__help {
+  position: relative;
+  margin-left: 2.4118738404vw;
+  cursor: pointer;
+}
+
+.checkbox__help svg {
+  position: absolute;
+  top: 50%;
+  left: -1.6697588126vw;
+  transform: translateY(-50%);
+  width: 1.4842300557vw;
+  height: 1.4842300557vw;
+}
+
+.radio {
+  position: relative;
+  padding-left: 3.0148423006vw;
+  cursor: pointer;
+}
+
+.radio input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio input:checked ~ span::after {
+  opacity: 1;
+}
+
+.radio span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.9480519481vw;
+  height: 1.9480519481vw;
+  border-radius: 50%;
+  border: 1px solid #b4b4b4;
+}
+
+.radio span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.3710575139vw;
+  height: 0.3710575139vw;
+  border-radius: 50%;
+  background-color: #1cc691;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.overlay.active {
+  display: flex;
+}
+
+.overlay.loaded {
+  pointer-events: auto;
+}
+
+.overlay.loaded .overlay-data__loader {
+  display: none;
+}
+
+.overlay-data {
+  text-align: center;
+}
+
+.overlay-data__text {
+  font-size: 1.5em;
+}
+
+.overlay-data__loader {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.overlay-data__loader div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #1cc691;
+  -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.overlay-data__loader div:nth-child(1) {
+  left: 8px;
+  -webkit-animation: loading1 0.6s infinite;
+  animation: loading1 0.6s infinite;
+}
+
+.overlay-data__loader div:nth-child(2) {
+  left: 8px;
+  -webkit-animation: loading2 0.6s infinite;
+  animation: loading2 0.6s infinite;
+}
+
+.overlay-data__loader div:nth-child(3) {
+  left: 32px;
+  -webkit-animation: loading2 0.6s infinite;
+  animation: loading2 0.6s infinite;
+}
+
+.overlay-data__loader div:nth-child(4) {
+  left: 56px;
+  -webkit-animation: loading3 0.6s infinite;
+  animation: loading3 0.6s infinite;
+}
+
+@-webkit-keyframes loading1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes loading1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes loading3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes loading3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@-webkit-keyframes loading2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+@keyframes loading2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+.header {
+  padding: 2.319109462vw 0;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo {
+  width: 16.2337662338vw;
+}
+
+.header-logo__item {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.footer {
+  padding: 2.5974025974vw 0 4.3599257885vw;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__link {
+  font-weight: 700;
+}
+
+.footer__link:not(:last-child) {
+  margin-right: 3.2467532468vw;
+}
+
+.main-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 0 0 #e3e3e3;
+}
+
+.calc-section {
+  padding: 0 3.2467532468vw;
+}
+
+.calc-section__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3.0612244898vw;
+  padding-bottom: 2.8293135436vw;
+}
+
+.calc-section__main {
+  padding-top: 3.3395176252vw;
+  padding-bottom: 4.5454545455vw;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.calc-section__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3.0612244898vw;
+  padding-bottom: 3.2467532468vw;
+}
+
+.calc-account {
+  display: flex;
+  align-items: center;
+}
+
+.calc-account__image {
+  margin-right: 1.3914656772vw;
+  width: 6.6326530612vw;
+  height: 6.6326530612vw;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.calc-account__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.calc-account__info {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.calc-account__domain {
+  margin-bottom: 0.4638218924vw;
+  font-size: 1.2em;
+}
+
+.calc-account__control {
+  color: #999999;
+}
+
+.calc-account__control::after {
+  background-color: #999999;
+}
+
+.calc-compilance {
+  display: flex;
+  align-items: center;
+}
+
+.calc-compilance__text {
+  margin-right: 1.3914656772vw;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+
+.calc-compilance__indicator {
+  width: 132px;
+  height: 132px;
+}
+
+.calc-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.calc-item__title {
+  margin-bottom: 1.159554731vw;
+}
+
+.calc-item__cards {
+  display: flex;
+  align-items: center;
+}
+
+.calc-item__cards > .calc-item__card:not(:last-child) {
+  margin-right: 1.2987012987vw;
+}
+
+.calc-item__card {
+  position: relative;
+  border: 1px solid #9f9f9f;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.calc-item__card--noborder {
+  border: none;
+}
+
+.calc-item__card--text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 13.6827458256vw;
+  height: 5.1020408163vw;
+  padding: 1.6233766234vw;
+}
+
+.calc-item__card input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.calc-item__card input:checked ~ .calc-item__border {
+  border-color: #1cc691;
+  box-shadow: 0 0 0 0.3710575139vw #e1f7f0;
+}
+
+.calc-item__card input:checked ~ .calc-item__text {
+  font-weight: 700;
+  color: #1cc691;
+}
+
+.calc-item__border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid #9f9f9f;
+  transition: all 0.3s linear;
+}
+
+.calc-item__image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.calc-item__name {
+  position: absolute;
+  bottom: -2.319109462vw;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.calc-item__text {
+  transition: all 0.3s linear;
+}
+
+.calc-item__icon {
+  width: 2.6901669759vw;
+  height: 2.6901669759vw;
+}
+
+.calc-item__options--row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calc-item__options--row .calc-item__option {
+  margin-bottom: 1.159554731vw;
+}
+
+.calc-item__options--row .calc-item__option:not(:last-child) {
+  margin-right: 2.7829313544vw;
+}
+
+.calc-item__option:not(:last-child) {
+  margin-bottom: 0.9276437848vw;
+}
+
+.calc__notification {
+  margin-bottom: 5.4730983302vw;
+}
+
+.calc__heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.7829313544vw;
+}
+
+.calc__heading .switcher {
+  flex-shrink: 0;
+}
+
+.calc__block {
+  display: none;
+}
+
+.calc__block.active {
+  display: block;
+}
+
+.calc__title {
+  margin-left: 1.8552875696vw;
+}
+
+.calc__row {
+  margin-bottom: 1.8552875696vw;
+}
+
+.cookies-row {
+  display: flex;
+}
+
+.cookies-row__item {
+  margin-bottom: 1.3914656772vw;
+}
+
+.cookies-item {
+  position: relative;
+}
+
+.cookies-item--large {
+  width: 18.2745825603vw;
+  height: 8.0705009276vw;
+}
+
+.cookies-item--medium {
+  width: 15.2597402597vw;
+  height: 8.0705009276vw;
+}
+
+.cookies-consent__item:nth-child(1) input:checked ~ svg path:not(:nth-last-child(1)),
+.cookies-consent__item:nth-child(1) input:checked ~ svg path:not(:nth-last-child(2)) {
+  fill: #1cc691;
+}
+
+.cookies-consent__item:nth-child(2) input:checked ~ svg path:not(:nth-last-child(1)) {
+  stroke: #1cc691;
+}
+
+.cookies-consent .calc-item__icon {
+  position: absolute;
+  top: 50%;
+  left: 1.6233766234vw;
+  transform: translateY(-50%);
+}
+
+.cookies-consent .calc-item__text {
+  margin-left: 2.7829313544vw;
+}
+
+.cookies__position {
+  margin-right: 6.4935064935vw;
+}
+
+.privacy__card {
+  width: 17.8107606679vw;
+  height: 7.1428571429vw;
+  margin-bottom: 2.7829313544vw;
+}
+
+@media only screen and (min-width: 993px) {
+  .link:hover {
+    opacity: 0.7;
+  }
+
+  .button:hover {
+    color: #1cc691;
+    background-color: #fff;
+  }
+
+  .button--reset:hover {
+    color: #919191;
+    background-color: transparent;
+    opacity: 0.7;
+  }
+
+  .notification__close:hover {
+    opacity: 0.7;
+  }
+
+  .select-list__item:hover {
+    background-color: #f1f1f1;
+  }
+
+  .calc-item__card:hover {
+    box-shadow: 0 0 0 0.3710575139vw #e1f7f0;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .calc-compilance__indicator {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    padding: 0 25px;
+  }
+
+  .button {
+    padding: 15px 45px;
+    border-width: 1px;
+  }
+
+  .button--reset {
+    padding: 15px 0;
+  }
+
+  .notification-status {
+    width: 85px;
+    flex-shrink: 0;
+  }
+
+  .notification-status__icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .notification-content {
+    max-width: none;
+    padding: 25px 40px 25px 25px;
+  }
+
+  .notification__close {
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .switcher {
+    width: 54px;
+    height: 28px;
+  }
+
+  .switcher input:checked ~ .switcher__thumb {
+    transform: translateX(26px);
+  }
+
+  .switcher__thumb {
+    top: 3px;
+    left: 3px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .checkbox {
+    padding-left: 30px;
+  }
+
+  .checkbox-tooltip {
+    margin-top: 15px;
+    margin-left: -20px;
+    padding: 12px 11px 12px 50px;
+  }
+
+  .checkbox-tooltip::before {
+    top: -10px;
+    border-width: 5px;
+  }
+
+  .checkbox-tooltip__icon {
+    top: 7px;
+    left: 11px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .checkbox__checkmark {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .checkbox__checkmark::after {
+    top: 3px;
+    left: 7px;
+    width: 4px;
+    height: 8px;
+    border-width: 0 3px 3px 0;
+  }
+
+  .checkbox__help {
+    margin-left: calc(10px + 1.5em);
+  }
+
+  .checkbox__help svg {
+    left: calc(-10px - 0.75em);
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .radio {
+    padding-left: 30px;
+  }
+
+  .radio span {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .radio span::after {
+    width: 4px;
+    height: 4px;
+  }
+
+  .header {
+    padding: 25px 0;
+  }
+
+  .header-logo {
+    width: 150px;
+  }
+
+  .footer {
+    padding: 25px 0 50px;
+  }
+
+  .footer__link:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .calc-section {
+    padding: 30px;
+  }
+
+  .calc-account__image {
+    margin-right: 15px;
+    width: 65px;
+    height: 65px;
+  }
+
+  .calc-account__domain {
+    margin-bottom: 5px;
+  }
+
+  .calc-compilance__text {
+    margin-right: 15px;
+  }
+
+  .calc-item__title {
+    margin-bottom: 12px;
+  }
+
+  .calc-item__card--text {
+    width: 136px;
+    height: 51px;
+    padding: 10px;
+  }
+
+  .calc-item__card input:checked ~ .calc-item__border {
+    box-shadow: 0 0 0 4px #e1f7f0;
+  }
+
+  .calc-item__name {
+    bottom: -30px;
+  }
+
+  .calc-item__icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .calc-item__option:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .calc__notification {
+    margin-bottom: 35px;
+  }
+
+  .calc__heading {
+    margin-bottom: 30px;
+  }
+
+  .calc__title {
+    margin-left: 20px;
+  }
+
+  .calc__row {
+    margin-bottom: 30px;
+  }
+
+  .cookies-row__item {
+    margin-bottom: 10px;
+  }
+
+  .cookies-item--large {
+    width: 150px;
+    height: 80px;
+  }
+
+  .cookies-item--medium {
+    width: 150px;
+    height: 80px;
+  }
+
+  .cookies-consent .calc-item__icon {
+    left: 10px;
+  }
+
+  .cookies-consent .calc-item__text {
+    margin-left: 30px;
+  }
+
+  .cookies__position {
+    margin-right: 35px;
+  }
+
+  .privacy__card {
+    width: 176px;
+    height: 70px;
+    margin-bottom: 45px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .notification {
+    flex-direction: column;
+  }
+
+  .notification-status {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .notification-content {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .title--inner {
+    font-size: 1em;
+  }
+
+  .header-logo {
+    width: 100px;
+  }
+
+  .calc-section {
+    padding: 15px;
+  }
+
+  .calc-section__bottom {
+    flex-direction: column;
+  }
+
+  .calc-account__image {
+    display: none;
+  }
+
+  .calc-compilance__text {
+    display: none;
+  }
+
+  .calc__button:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .calc__heading {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .calc__title {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .cookies-row {
+    flex-direction: column;
+  }
+
+  .cookies__position {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .checkbox-tooltip__icon {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .calc-item__cards {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .calc-item__cards > .calc-item__card:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .calc-item__options--row {
+    flex-direction: column;
+  }
+
+  .calc-item__options--row .calc-item__option:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .calc-item__options--row .calc-item__option:last-child {
+    margin-bottom: 0;
+  }
+
+  .cookies-item--medium:not(:last-child) {
+    margin-bottom: 30px !important;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 991px) {
+  .calc-item__card:hover {
+    box-shadow: 0 0 0 4px #e1f7f0;
+  }
+}
+/*# sourceMappingURL=styles.min.css.map */

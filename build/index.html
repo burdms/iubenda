@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/styles.min.css">
+    <script src="./assets/scripts/main.min.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper"><a class="header-logo" href="#"><img class="header-logo__item" src="assets/images/logo.svg" alt="iubenda"></a></div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="overlay js-overlay">
+          <div class="overlay-data">
+            <p class="overlay-data__text js-overlay-text">Hold on a second, we are submitting your data : )</p>
+            <div class="overlay-data__loader js-overlay-loader">
+              <div class="div"></div>
+              <div class="div"></div>
+              <div class="div"></div>
+              <div class="div"></div>
+            </div>
+          </div>
+        </div>
+        <form class="calc main-container" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="calc-section calc-section__top">
+            <div class="calc-account">
+              <div class="calc-account__image"><img src="assets/images/pc.svg" alt="Account image"></div>
+              <div class="calc-account__info"><a class="link calc-account__domain" href="#">www.domain.com</a><a class="link calc-account__control" href="#">Account & Billing info</a></div>
+            </div>
+            <div class="calc-compilance"><span class="calc-compilance__text">Your current compilance rating</span>
+              <div class="compilance calc-compilance__indicator">
+                <svg class="compilance-indicator compilance__indicator" width="100%" height="100%">
+                  <circle stroke="#DEDEDE" fill="transparent" stroke-width="8" cx="50%" cy="50%" r="58"></circle>
+                  <circle class="compilance-indicator__ring" stroke="#000" fill="transparent" stroke-width="8" cx="50%" cy="50%" r="58"></circle>
+                </svg>
+                <div class="compilance__numbers"><span class="compilance__amount">23</span><span class="compilance__percent">%</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="calc-section calc-section__main">
+            <div class="notification notification--success calc__notification active">
+              <div class="notification-status">
+                <svg class="notification-status__icon notification-status__icon--success" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 46C36.1503 46 46 36.1503 46 24C46 11.8497 36.1503 2 24 2C11.8497 2 2 11.8497 2 24C2 36.1503 11.8497 46 24 46Z" stroke="black"></path>
+                  <path d="M13.3829 23.6774L20.755 31L34.8496 17" stroke="black"></path>
+                </svg>
+                <svg class="notification-status__icon notification-status__icon--warning" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="21.5" stroke="black"></circle>
+                  <path d="M22.6816 36.8926C22.6816 36.291 22.9688 35.8809 23.543 35.6621C23.707 35.6074 23.8574 35.5801 23.9941 35.5801C24.623 35.5801 25.0469 35.8672 25.2656 36.4414C25.3203 36.6055 25.3477 36.7559 25.3477 36.8926C25.3477 37.5215 25.0469 37.9316 24.4453 38.123C24.2812 38.1777 24.1309 38.2051 23.9941 38.2051C23.3926 38.2051 22.9824 37.918 22.7637 37.3438C22.709 37.1797 22.6816 37.0293 22.6816 36.8926ZM22.9688 31.1914V9.28906H25.0605V31.1914H22.9688Z" fill="black"></path>
+                </svg>
+              </div>
+              <div class="notification-content">
+                <p class="notification__text">Your website has been created and your legal documents have been generated. Setup your cookie banner and privacy policy button to complete the integration.</p>
+              </div>
+              <div class="notification__close">X</div>
+            </div>
+            <div class="cookies calc-cookies js-calc-section">
+              <div class="calc__heading">
+                <div class="switcher js-calc-switcher">
+                  <input type="checkbox" name="banner" checked="checked"/><span class="switcher__thumb"></span><span class="switcher__background"></span>
+                </div>
+                <h2 class="title calc__title">Add a cookie banner</h2>
+              </div>
+              <div class="calc__block active js-calc-block">
+                <div class="cookies-row calc__row">
+                  <div class="calc-item cookies-row__item cookies__position"><span class="title title--inner calc-item__title">Position</span>
+                    <div class="select cookies-item cookies-item--large calc-item__card">
+                      <input type="text" name="bannerPosition" value="top">
+                      <div class="select__item select__selected"><img src="assets/images/top.png" alt="top"></div>
+                      <div class="select__arrow">
+                        <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0H15L7.5 12L0 0Z" fill="#4A4A4A"></path>
+                        </svg>
+                      </div>
+                      <div class="select-list">
+                        <div class="select-list__item select__item"><img src="assets/images/position/top.png" alt="top"></div>
+                        <div class="select-list__item select__item"><img src="assets/images/position/center.png" alt="center"></div>
+                        <div class="select-list__item select__item"><img src="assets/images/position/bottom.png" alt="bottom"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calc-item cookies-row__item"><span class="title title--inner calc-item__title">Theme</span>
+                    <div class="calc-item__cards">
+                      <div class="cookies-item cookies-item--medium calc-item__card calc-item__card--noborder calc-item__card--image">
+                        <input type="radio" name="bannerTheme" value="dark"><span class="calc-item__border"></span><img class="calc-item__image" src="assets/images/theme/dark.png" alt="dark"><span class="calc-item__name">Dark</span>
+                      </div>
+                      <div class="cookies-item cookies-item--medium calc-item__card calc-item__card--noborder calc-item__card--image">
+                        <input type="radio" name="bannerTheme" value="light"><span class="calc-item__border"></span><img class="calc-item__image" src="assets/images/theme/light.png" alt="light"><span class="calc-item__name">Light</span>
+                      </div>
+                      <div class="cookies-item cookies-item--medium calc-item__card calc-item__card--noborder calc-item__card--image">
+                        <input type="radio" name="bannerTheme" value="custom"><span class="calc-item__border"></span><img class="calc-item__image" src="assets/images/theme/custom.png" alt="custom"><span class="calc-item__name">Custom style</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cookies-row calc__row">
+                  <div class="calc-item cookies-row__item"><span class="title title--inner calc-item__title">Legislation</span>
+                    <div class="calc-item__cards">
+                      <div class="calc-item__card calc-item__card--noborder calc-item__card--text">
+                        <input type="radio" name="bannerLegislation" value="gdpr"><span class="calc-item__border"></span><span class="calc-item__text">GDPR Only</span>
+                      </div>
+                      <div class="calc-item__card calc-item__card--noborder calc-item__card--text">
+                        <input type="radio" name="bannerLegislation" value="ccpa"><span class="calc-item__border"></span><span class="calc-item__text">CCPA Only</span>
+                      </div>
+                      <div class="calc-item__card calc-item__card--noborder calc-item__card--text">
+                        <input type="radio" name="bannerLegislation" value="both"><span class="calc-item__border"></span><span class="calc-item__text">Both</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cookies-row cookies-consent calc__row">
+                  <div class="calc-item cookies-row__item"><span class="title title--inner calc-item__title">Require consent from</span>
+                    <div class="calc-item__cards">
+                      <div class="calc-item__card calc-item__card--noborder calc-item__card--text cookies-consent__item">
+                        <input type="radio" name="bannerConsent" value="eu"><span class="calc-item__border"></span>
+                        <svg class="calc-item__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 7.5H31V25.5H5.5V7.5Z" fill="black" fill-opacity="0.05"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 9C14.9142 9 15.25 8.66421 15.25 8.25C15.25 7.83579 14.9142 7.5 14.5 7.5C14.0858 7.5 13.75 7.83579 13.75 8.25C13.75 8.66421 14.0858 9 14.5 9Z" fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 19.5C14.9142 19.5 15.25 19.1642 15.25 18.75C15.25 18.3358 14.9142 18 14.5 18C14.0858 18 13.75 18.3358 13.75 18.75C13.75 19.1642 14.0858 19.5 14.5 19.5Z" fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M19 13.5C19 13.9142 19.3358 14.25 19.75 14.25C20.1642 14.25 20.5 13.9142 20.5 13.5C20.5 13.0858 20.1642 12.75 19.75 12.75C19.3358 12.75 19 13.0858 19 13.5Z" fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 13.5C8.5 13.9142 8.83579 14.25 9.25 14.25C9.66421 14.25 10 13.9142 10 13.5C10 13.0858 9.66421 12.75 9.25 12.75C8.83579 12.75 8.5 13.0858 8.5 13.5Z" fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M17.682 16.682C17.3891 16.9749 17.3891 17.4497 17.682 17.7426C17.9749 18.0355 18.4497 18.0355 18.7426 17.7426C19.0355 17.4497 19.0355 16.9749 18.7426 16.682C18.4497 16.3891 17.9749 16.3891 17.682 16.682Z" fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2573 9.25736C9.96444 9.55025 9.96444 10.0251 10.2573 10.318C10.5502 10.6109 11.0251 10.6109 11.318 10.318C11.6109 10.0251 11.6109 9.55025 11.318 9.25736C11.0251 8.96447 10.5502 8.96447 10.2573 9.25736Z" fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M11.318 16.682C11.0252 16.3891 10.5503 16.3891 10.2574 16.682C9.9645 16.9749 9.9645 17.4497 10.2574 17.7426C10.5503 18.0355 11.0252 18.0355 11.318 17.7426C11.6109 17.4497 11.6109 16.9749 11.318 16.682Z" fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7426 9.25735C18.4497 8.96446 17.9748 8.96446 17.682 9.25735C17.3891 9.55025 17.3891 10.0251 17.682 10.318C17.9748 10.6109 18.4497 10.6109 18.7426 10.318C19.0355 10.0251 19.0355 9.55025 18.7426 9.25735Z" fill="black"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.75 3V29.0272Z" fill="#D8D8D8"></path>
+                          <path d="M1.75 4.5V4C1.47386 4 1.25 4.22386 1.25 4.5H1.75ZM27.1407 4.5H27.6407C27.6407 4.22386 27.4168 4 27.1407 4V4.5ZM27.1407 22.5V23C27.4168 23 27.6407 22.7761 27.6407 22.5H27.1407ZM1.75 22.5H1.25C1.25 22.7761 1.47386 23 1.75 23V22.5ZM2.25 3C2.25 2.72386 2.02614 2.5 1.75 2.5C1.47386 2.5 1.25 2.72386 1.25 3H2.25ZM1.25 29.0272C1.25 29.3033 1.47386 29.5272 1.75 29.5272C2.02614 29.5272 2.25 29.3033 2.25 29.0272H1.25ZM14.5 9.5C15.1904 9.5 15.75 8.94036 15.75 8.25H14.75C14.75 8.38807 14.6381 8.5 14.5 8.5V9.5ZM15.75 8.25C15.75 7.55964 15.1904 7 14.5 7V8C14.6381 8 14.75 8.11193 14.75 8.25H15.75ZM14.5 7C13.8096 7 13.25 7.55964 13.25 8.25H14.25C14.25 8.11193 14.3619 8 14.5 8V7ZM13.25 8.25C13.25 8.94036 13.8096 9.5 14.5 9.5V8.5C14.3619 8.5 14.25 8.38807 14.25 8.25H13.25ZM14.5 20C15.1904 20 15.75 19.4404 15.75 18.75H14.75C14.75 18.8881 14.6381 19 14.5 19V20ZM15.75 18.75C15.75 18.0596 15.1904 17.5 14.5 17.5V18.5C14.6381 18.5 14.75 18.6119 14.75 18.75H15.75ZM14.5 17.5C13.8096 17.5 13.25 18.0596 13.25 18.75H14.25C14.25 18.6119 14.3619 18.5 14.5 18.5V17.5ZM13.25 18.75C13.25 19.4404 13.8096 20 14.5 20V19C14.3619 19 14.25 18.8881 14.25 18.75H13.25ZM18.5 13.5C18.5 14.1904 19.0596 14.75 19.75 14.75V13.75C19.6119 13.75 19.5 13.6381 19.5 13.5H18.5ZM19.75 14.75C20.4404 14.75 21 14.1904 21 13.5H20C20 13.6381 19.8881 13.75 19.75 13.75V14.75ZM21 13.5C21 12.8096 20.4404 12.25 19.75 12.25V13.25C19.8881 13.25 20 13.3619 20 13.5H21ZM19.75 12.25C19.0596 12.25 18.5 12.8096 18.5 13.5H19.5C19.5 13.3619 19.6119 13.25 19.75 13.25V12.25ZM8 13.5C8 14.1904 8.55964 14.75 9.25 14.75V13.75C9.11193 13.75 9 13.6381 9 13.5H8ZM9.25 14.75C9.94036 14.75 10.5 14.1904 10.5 13.5H9.5C9.5 13.6381 9.38807 13.75 9.25 13.75V14.75ZM10.5 13.5C10.5 12.8096 9.94036 12.25 9.25 12.25V13.25C9.38807 13.25 9.5 13.3619 9.5 13.5H10.5ZM9.25 12.25C8.55964 12.25 8 12.8096 8 13.5H9C9 13.3619 9.11193 13.25 9.25 13.25V12.25ZM17.3284 16.3284C16.8403 16.8166 16.8403 17.608 17.3284 18.0962L18.0355 17.3891C17.9379 17.2915 17.9379 17.1332 18.0355 17.0355L17.3284 16.3284ZM17.3284 18.0962C17.8166 18.5843 18.608 18.5843 19.0962 18.0962L18.3891 17.3891C18.2914 17.4867 18.1331 17.4867 18.0355 17.3891L17.3284 18.0962ZM19.0962 18.0962C19.5843 17.608 19.5843 16.8166 19.0962 16.3284L18.3891 17.0355C18.4867 17.1332 18.4867 17.2915 18.3891 17.3891L19.0962 18.0962ZM19.0962 16.3284C18.608 15.8403 17.8166 15.8403 17.3284 16.3284L18.0355 17.0355C18.1331 16.9379 18.2914 16.9379 18.3891 17.0355L19.0962 16.3284ZM9.90378 8.90381C9.41563 9.39196 9.41563 10.1834 9.90378 10.6716L10.6109 9.96447C10.5133 9.86683 10.5133 9.70854 10.6109 9.61091L9.90378 8.90381ZM9.90378 10.6716C10.3919 11.1597 11.1834 11.1597 11.6716 10.6716L10.9644 9.96447C10.8668 10.0621 10.7085 10.0621 10.6109 9.96447L9.90378 10.6716ZM11.6716 10.6716C12.1597 10.1834 12.1597 9.39196 11.6716 8.90381L10.9644 9.61091C11.0621 9.70854 11.0621 9.86683 10.9644 9.96447L11.6716 10.6716ZM11.6716 8.90381C11.1834 8.41565 10.3919 8.41565 9.90378 8.90381L10.6109 9.61091C10.7085 9.51328 10.8668 9.51328 10.9644 9.61091L11.6716 8.90381ZM11.6716 16.3284C11.1834 15.8403 10.392 15.8403 9.90384 16.3284L10.6109 17.0355C10.7086 16.9379 10.8669 16.9379 10.9645 17.0355L11.6716 16.3284ZM9.90384 16.3284C9.41568 16.8166 9.41568 17.608 9.90384 18.0962L10.6109 17.3891C10.5133 17.2915 10.5133 17.1332 10.6109 17.0355L9.90384 16.3284ZM9.90384 18.0962C10.392 18.5843 11.1834 18.5843 11.6716 18.0962L10.9645 17.3891C10.8669 17.4867 10.7086 17.4867 10.6109 17.3891L9.90384 18.0962ZM11.6716 18.0962C12.1598 17.608 12.1598 16.8166 11.6716 16.3284L10.9645 17.0355C11.0621 17.1332 11.0621 17.2915 10.9645 17.3891L11.6716 18.0962ZM19.0962 8.9038C18.608 8.41564 17.8166 8.41564 17.3284 8.9038L18.0355 9.61091C18.1331 9.51328 18.2914 9.51328 18.3891 9.61091L19.0962 8.9038ZM17.3284 8.9038C16.8402 9.39195 16.8402 10.1834 17.3284 10.6716L18.0355 9.96446C17.9379 9.86683 17.9379 9.70854 18.0355 9.61091L17.3284 8.9038ZM17.3284 10.6716C17.8166 11.1597 18.608 11.1597 19.0962 10.6716L18.3891 9.96446C18.2914 10.0621 18.1331 10.0621 18.0355 9.96446L17.3284 10.6716ZM19.0962 10.6716C19.5843 10.1834 19.5843 9.39195 19.0962 8.9038L18.3891 9.61091C18.4867 9.70854 18.4867 9.86683 18.3891 9.96446L19.0962 10.6716ZM1.75 5H27.1407V4H1.75V5ZM26.6407 4.5V22.5H27.6407V4.5H26.6407ZM27.1407 22H1.75V23H27.1407V22ZM2.25 22.5V4.5H1.25V22.5H2.25ZM1.25 3V29.0272H2.25V3H1.25Z" fill="black"></path>
+                        </svg><span class="calc-item__text">EU Only</span>
+                      </div>
+                      <div class="calc-item__card calc-item__card--noborder calc-item__card--text cookies-consent__item">
+                        <input type="radio" name="bannerConsent" value="world"><span class="calc-item__border"></span>
+                        <svg class="calc-item__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M18.5455 6.36842H15.1364L13.0909 8.08271V9.22557H11.0455L9 10.3684V11.5113H12.4091L13.0909 12.0827H14.4545L15.8182 13.2256H18.5455L19.9091 14.3684L21.2727 13.2256H24M27 15.3684C27 22.5481 21.1797 28.3684 14 28.3684C6.8203 28.3684 1 22.5481 1 15.3684C1 8.18872 6.8203 2.36842 14 2.36842C21.1797 2.36842 27 8.18872 27 15.3684ZM16.5 17.2434H15.25L13.375 15.3684H10.875L9 17.2434L10.25 20.3684H12.125L13.375 21.6184V24.7434L14 25.3684H15.25L17.125 23.4934V21.6184L19 19.7434L16.5 17.2434Z" stroke="black"></path>
+                          <path d="M19 29.3684C26.1797 29.3684 32 23.5481 32 16.3684C32 9.18872 26.1797 3.36842 19 3.36842C11.8203 3.36842 6 9.18872 6 16.3684C6 23.5481 11.8203 29.3684 19 29.3684Z" fill="black" fill-opacity="0.05"></path>
+                        </svg><span class="calc-item__text">World Wide</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cookies-row calc__row">
+                  <div class="calc-item cookies-row__item"><span class="title title--inner calc-item__title">Banner buttons</span>
+                    <div class="calc-item__options">
+                      <div class="checkbox calc-item__option ">
+                        <input type="checkbox" name="bannerAccept" checked="checked" id="bannerAccept"/><span class="checkbox__checkmark"></span>
+                        <label class="checkbox__label" for="bannerAccept">Explicit Accept and Customize buttons</label>
+                      </div>
+                      <div class="checkbox calc-item__option ">
+                        <input type="checkbox" name="bannerReject" checked="checked" id="bannerReject"/><span class="checkbox__checkmark"></span>
+                        <label class="checkbox__label" for="bannerReject">Explicit Reject button</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cookies-row calc__row">
+                  <div class="calc-item cookies-row__item"><span class="title title--inner calc-item__title">Banner buttons</span>
+                    <div class="calc-item__options">
+                      <div class="checkbox calc-item__option js-tooltip-parent">
+                        <input type="checkbox" name="bannerOtherIAB" checked="checked" id="bannerOtherIAB"/><span class="checkbox__checkmark"></span>
+                        <label class="checkbox__label" for="bannerOtherIAB">Enable IAB Transparency and Consent Framework</label><span class="checkbox__label">&nbsp;-&nbsp;</span><span class="link checkbox__more js-tooltip-link">Learn more</span>
+                        <div class="checkbox-tooltip js-tooltip-item">
+                          <svg class="checkbox-tooltip__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="21.5" stroke="black"></circle>
+                            <path d="M22.6816 36.8926C22.6816 36.291 22.9688 35.8809 23.543 35.6621C23.707 35.6074 23.8574 35.5801 23.9941 35.5801C24.623 35.5801 25.0469 35.8672 25.2656 36.4414C25.3203 36.6055 25.3477 36.7559 25.3477 36.8926C25.3477 37.5215 25.0469 37.9316 24.4453 38.123C24.2812 38.1777 24.1309 38.2051 23.9941 38.2051C23.3926 38.2051 22.9824 37.918 22.7637 37.3438C22.709 37.1797 22.6816 37.0293 22.6816 36.8926ZM22.9688 31.1914V9.28906H25.0605V31.1914H22.9688Z" fill="black"></path>
+                          </svg><span class="checkbox-tooltip__text">You may should activate this feature if you show ads on your website</span>
+                        </div>
+                      </div>
+                      <div class="checkbox calc-item__option js-tooltip-parent">
+                        <input type="checkbox" name="bannerOtherGoogleAMP" checked="checked" id="bannerOtherGoogleAMP"/><span class="checkbox__checkmark"></span>
+                        <label class="checkbox__label" for="bannerOtherGoogleAMP">Enable Google AMP support</label><span class="link checkbox__help">
+                          <svg class="js-tooltip-link" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="#C0C0C0"></path>
+                            <path d="M20.5781 12.4756C20.5781 13.0127 20.5212 13.4847 20.4072 13.8916C20.2933 14.2985 20.1387 14.6647 19.9434 14.9902C19.748 15.3076 19.5243 15.5965 19.272 15.8569C19.0278 16.1092 18.7756 16.3493 18.5151 16.5771L17.7583 17.2485C17.506 17.4683 17.2782 17.7043 17.0747 17.9565C16.8794 18.2007 16.7166 18.4733 16.5864 18.7744C16.4562 19.0674 16.387 19.4092 16.3789 19.7998H13.7056C13.7381 19.1081 13.8602 18.5181 14.0718 18.0298C14.2834 17.5334 14.5356 17.1021 14.8286 16.7358C15.1297 16.3696 15.4512 16.0441 15.793 15.7593C16.1348 15.4663 16.4481 15.1693 16.7329 14.8682C17.0259 14.5671 17.266 14.2415 17.4531 13.8916C17.6484 13.5335 17.7461 13.1104 17.7461 12.6221C17.7461 11.9059 17.5549 11.3403 17.1724 10.9253C16.7899 10.5103 16.2446 10.3027 15.5366 10.3027C15.1948 10.3027 14.8815 10.3678 14.5967 10.498C14.3118 10.6201 14.0596 10.7951 13.8398 11.0229C13.6201 11.2508 13.4411 11.5275 13.3027 11.853C13.1644 12.1785 13.0749 12.5366 13.0342 12.9272L10.1777 12.7808C10.2591 12.0565 10.4219 11.377 10.666 10.7422C10.9183 10.1074 11.2601 9.55404 11.6914 9.08203C12.1309 8.61003 12.6639 8.23568 13.2905 7.95898C13.9253 7.68229 14.6618 7.54395 15.5 7.54395C16.2975 7.54395 17.0096 7.65788 17.6362 7.88574C18.2629 8.11361 18.7959 8.4432 19.2354 8.87451C19.6748 9.29769 20.0085 9.81445 20.2363 10.4248C20.4642 11.0352 20.5781 11.7188 20.5781 12.4756ZM13.6201 25V21.7041H16.5132V25H13.6201Z" fill="white"></path>
+                          </svg></span>
+                        <div class="checkbox-tooltip js-tooltip-item">
+                          <svg class="checkbox-tooltip__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="21.5" stroke="black"></circle>
+                            <path d="M22.6816 36.8926C22.6816 36.291 22.9688 35.8809 23.543 35.6621C23.707 35.6074 23.8574 35.5801 23.9941 35.5801C24.623 35.5801 25.0469 35.8672 25.2656 36.4414C25.3203 36.6055 25.3477 36.7559 25.3477 36.8926C25.3477 37.5215 25.0469 37.9316 24.4453 38.123C24.2812 38.1777 24.1309 38.2051 23.9941 38.2051C23.3926 38.2051 22.9824 37.918 22.7637 37.3438C22.709 37.1797 22.6816 37.0293 22.6816 36.8926ZM22.9688 31.1914V9.28906H25.0605V31.1914H22.9688Z" fill="black"></path>
+                          </svg><span class="checkbox-tooltip__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, amet?</span>
+                        </div>
+                      </div>
+                      <div class="checkbox calc-item__option js-tooltip-parent">
+                        <input type="checkbox" name="bannerOtherBlock" checked="checked" id="bannerOtherBlock"/><span class="checkbox__checkmark"></span>
+                        <label class="checkbox__label" for="bannerOtherBlock">Automatically block scripts detected by the plugin</label><span class="link checkbox__help">
+                          <svg class="js-tooltip-link" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="#C0C0C0"></path>
+                            <path d="M20.5781 12.4756C20.5781 13.0127 20.5212 13.4847 20.4072 13.8916C20.2933 14.2985 20.1387 14.6647 19.9434 14.9902C19.748 15.3076 19.5243 15.5965 19.272 15.8569C19.0278 16.1092 18.7756 16.3493 18.5151 16.5771L17.7583 17.2485C17.506 17.4683 17.2782 17.7043 17.0747 17.9565C16.8794 18.2007 16.7166 18.4733 16.5864 18.7744C16.4562 19.0674 16.387 19.4092 16.3789 19.7998H13.7056C13.7381 19.1081 13.8602 18.5181 14.0718 18.0298C14.2834 17.5334 14.5356 17.1021 14.8286 16.7358C15.1297 16.3696 15.4512 16.0441 15.793 15.7593C16.1348 15.4663 16.4481 15.1693 16.7329 14.8682C17.0259 14.5671 17.266 14.2415 17.4531 13.8916C17.6484 13.5335 17.7461 13.1104 17.7461 12.6221C17.7461 11.9059 17.5549 11.3403 17.1724 10.9253C16.7899 10.5103 16.2446 10.3027 15.5366 10.3027C15.1948 10.3027 14.8815 10.3678 14.5967 10.498C14.3118 10.6201 14.0596 10.7951 13.8398 11.0229C13.6201 11.2508 13.4411 11.5275 13.3027 11.853C13.1644 12.1785 13.0749 12.5366 13.0342 12.9272L10.1777 12.7808C10.2591 12.0565 10.4219 11.377 10.666 10.7422C10.9183 10.1074 11.2601 9.55404 11.6914 9.08203C12.1309 8.61003 12.6639 8.23568 13.2905 7.95898C13.9253 7.68229 14.6618 7.54395 15.5 7.54395C16.2975 7.54395 17.0096 7.65788 17.6362 7.88574C18.2629 8.11361 18.7959 8.4432 19.2354 8.87451C19.6748 9.29769 20.0085 9.81445 20.2363 10.4248C20.4642 11.0352 20.5781 11.7188 20.5781 12.4756ZM13.6201 25V21.7041H16.5132V25H13.6201Z" fill="white"></path>
+                          </svg></span>
+                        <div class="checkbox-tooltip js-tooltip-item">
+                          <svg class="checkbox-tooltip__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="21.5" stroke="black"></circle>
+                            <path d="M22.6816 36.8926C22.6816 36.291 22.9688 35.8809 23.543 35.6621C23.707 35.6074 23.8574 35.5801 23.9941 35.5801C24.623 35.5801 25.0469 35.8672 25.2656 36.4414C25.3203 36.6055 25.3477 36.7559 25.3477 36.8926C25.3477 37.5215 25.0469 37.9316 24.4453 38.123C24.2812 38.1777 24.1309 38.2051 23.9941 38.2051C23.3926 38.2051 22.9824 37.918 22.7637 37.3438C22.709 37.1797 22.6816 37.0293 22.6816 36.8926ZM22.9688 31.1914V9.28906H25.0605V31.1914H22.9688Z" fill="black"></path>
+                          </svg><span class="checkbox-tooltip__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, amet?</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="privacy calc-privacy js-calc-section">
+              <div class="calc__heading">
+                <div class="switcher js-calc-switcher">
+                  <input type="checkbox" name="privacy" checked="checked"/><span class="switcher__thumb"></span><span class="switcher__background"></span>
+                </div>
+                <h2 class="title calc__title">Add the privacy policy button</h2>
+              </div>
+              <div class="calc__block active js-calc-block">
+                <div class="calc-item calc__row"><span class="title title--inner calc-item__title">Button style</span>
+                  <div class="calc-item__cards">
+                    <div class="privacy__card calc-item__card calc-item__card--noborder calc-item__card--image">
+                      <input type="radio" name="privacyButton" value="light"><span class="calc-item__border"></span><img class="calc-item__image" src="assets/images/privacy/privacy-light.png" alt="light"><span class="calc-item__name">Light</span>
+                    </div>
+                    <div class="privacy__card calc-item__card calc-item__card--noborder calc-item__card--image">
+                      <input type="radio" name="privacyButton" value="dark"><span class="calc-item__border"></span><img class="calc-item__image" src="assets/images/privacy/privacy-dark.png" alt="dark"><span class="calc-item__name">Dark</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="calc-item calc__row"><span class="title title--inner calc-item__title">Button position</span>
+                  <div class="calc-item__options calc-item__options--row">
+                    <label class="radio calc-item__option">Put automatically button on footer
+                      <input type="radio" name="privacyButtonPosition" value="Auto" checked="checked"/><span class="radio__dot"></span>
+                    </label>
+                    <label class="radio calc-item__option">Integrate button manually
+                      <input type="radio" name="privacyButtonPosition" value="Manually"/><span class="radio__dot"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="calc-section calc-section__bottom">
+            <button class="calc__button button button--reset" type="reset">Reset settings</button>
+            <button class="calc__button button" type="submit">Integrate</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper"><a class="link footer__link" href="#">Documentation</a><a class="link footer__link" href="#">Contact support</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
