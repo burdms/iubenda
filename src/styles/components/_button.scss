@@ -1,0 +1,35 @@
+.button {
+  padding: vw(15) vw(45);
+  font-weight: 600;
+  border: vw(1) solid $success;
+  border-radius: 30px;
+  color: #fff;
+  background-color: $success;
+
+  @include media("m") {
+    padding: 15px 45px;
+    border-width: 1px;
+  }
+
+  @include hover {
+    color: $success;
+    background-color: #fff;
+  }
+
+  &--reset {
+    padding: 0;
+    border: none;
+    color: #919191;
+    background-color: transparent;
+
+    @include media("m") {
+      padding: 15px 0;
+    }
+
+    @include hover {
+      color: #919191;
+      background-color: transparent;
+      opacity: 0.7;
+    }
+  }
+}

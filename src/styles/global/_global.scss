@@ -1,0 +1,28 @@
+body {
+  font-family: $fontPrimary;
+  font-weight: 400;
+  font-style: normal;
+  font-size: vw(30);
+  line-height: 1.5;
+  color: $primary;
+  background-color: #f1f1f1;
+
+  @include media("m") {
+    font-size: 15px;
+  }
+}
+
+.container {
+  max-width: vw(2156);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 vw(51);
+
+  @include media("m") {
+    padding: 0 25px;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}

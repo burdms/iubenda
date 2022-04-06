@@ -1,0 +1,73 @@
+.switcher {
+  position: relative;
+  width: vw(116);
+  height: vw(60);
+  overflow: hidden;
+  cursor: pointer;
+
+  @include media("m") {
+    width: 54px;
+    height: 28px;
+  }
+
+  input {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked ~ .switcher {
+      &__thumb {
+        transform: translateX(vw(54));
+
+        @include media("m") {
+          transform: translateX(26px);
+        }
+      }
+
+      &__background {
+        border-color: #18ab7d;
+        background-color: $success;
+      }
+    }
+  }
+
+  &__thumb {
+    position: absolute;
+    top: vw(6.5);
+    left: vw(6.5);
+    z-index: 1;
+    width: vw(48);
+    height: vw(48);
+    border-radius: 50%;
+    background-color: #fff;
+    transition: $transition;
+
+    @include media("m") {
+      top: 3px;
+      left: 3px;
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: 1px solid #d6d6d6;
+    background-color: #e8f9f4;
+    transition: $transition;
+  }
+}

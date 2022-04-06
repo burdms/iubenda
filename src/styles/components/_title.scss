@@ -1,0 +1,19 @@
+.title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2em;
+
+  @include media("s") {
+    font-size: 1.5em;
+  }
+
+  &--inner {
+    font-weight: 600;
+    font-size: 1em;
+    color: #707070;
+
+    @include media("s") {
+      font-size: 1em;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.cookies {
+  &-row {
+    display: flex;
+
+    @include media("s") {
+      flex-direction: column;
+    }
+
+    &__item {
+      margin-bottom: vw(30);
+
+      @include media("m") {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &-item {
+    position: relative;
+
+    &--large {
+      width: vw(394);
+      height: vw(174);
+
+      @include media("m") {
+        width: 150px;
+        height: 80px;
+      }
+    }
+
+    &--medium {
+      width: vw(329);
+      height: vw(174);
+
+      @include media("m") {
+        width: 150px;
+        height: 80px;
+      }
+
+      @include media("xs") {
+        &:not(:last-child) {
+          margin-bottom: 30px !important;
+        }
+      }
+    }
+  }
+
+  &-consent {
+    &__item {
+      &:nth-child(1) {
+        input:checked ~ svg {
+          path {
+            &:not(:nth-last-child(1)),
+            &:not(:nth-last-child(2)) {
+              fill: $success;
+            }
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        input:checked ~ svg {
+          path {
+            &:not(:nth-last-child(1)) {
+              stroke: $success;
+            }
+          }
+        }
+      }
+    }
+
+    .calc-item {
+      &__icon {
+        position: absolute;
+        top: 50%;
+        left: vw(35);
+        transform: translateY(-50%);
+
+        @include media("m") {
+          left: 10px;
+        }
+      }
+
+      &__text {
+        margin-left: vw(60);
+
+        @include media("m") {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+
+  &__position {
+    margin-right: vw(140);
+
+    @include media("m") {
+      margin-right: 35px;
+    }
+
+    @include media("s") {
+      margin-right: 0;
+    }
+  }
+}

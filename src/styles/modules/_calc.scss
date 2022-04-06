@@ -1,0 +1,369 @@
+.calc {
+  &-section {
+    padding: 0 vw(70);
+
+    @include media("m") {
+      padding: 30px;
+    }
+
+    @include media("s") {
+      padding: 15px;
+    }
+
+    &__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: vw(66);
+      padding-bottom: vw(61);
+    }
+
+    &__main {
+      padding-top: vw(72);
+      padding-bottom: vw(98);
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+
+    &__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: vw(66);
+      padding-bottom: vw(70);
+
+      @include media("s") {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &-account {
+    display: flex;
+    align-items: center;
+
+    &__image {
+      margin-right: vw(30);
+      width: vw(143);
+      height: vw(143);
+      border-radius: 8px;
+      overflow: hidden;
+
+      @include media("m") {
+        margin-right: 15px;
+        width: 65px;
+        height: 65px;
+      }
+
+      @include media("s") {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      font-weight: 700;
+    }
+
+    &__domain {
+      margin-bottom: vw(10);
+      font-size: 1.2em;
+
+      @include media("m") {
+        margin-bottom: 5px;
+      }
+    }
+
+    &__control {
+      color: #999999;
+
+      &::after {
+        background-color: #999999;
+      }
+    }
+  }
+
+  &-compilance {
+    display: flex;
+    align-items: center;
+
+    &__text {
+      margin-right: vw(30);
+      font-weight: 700;
+      color: #4d4d4d;
+
+      @include media("m") {
+        margin-right: 15px;
+      }
+
+      @include media("s") {
+        display: none;
+      }
+    }
+
+    &__indicator {
+      width: 132px;
+      height: 132px;
+
+      @include media("l") {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      margin-bottom: vw(25);
+
+      @include media("m") {
+        margin-bottom: 12px;
+      }
+    }
+
+    &__cards {
+      display: flex;
+      align-items: center;
+
+      @include media("xs") {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      & > .calc-item__card {
+        &:not(:last-child) {
+          margin-right: vw(28);
+
+          @include media("xs") {
+            margin-right: 0;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+
+    &__card {
+      position: relative;
+      border: 1px solid #9f9f9f;
+      border-radius: 8px;
+      cursor: pointer;
+
+      @include hover {
+        box-shadow: 0 0 0 vw(8) #e1f7f0;
+
+        @include media("m") {
+          box-shadow: 0 0 0 4px #e1f7f0;
+        }
+      }
+
+      &--noborder {
+        border: none;
+      }
+
+      &--text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: vw(295);
+        height: vw(110);
+        padding: vw(35);
+
+        @include media("m") {
+          width: 136px;
+          height: 51px;
+          padding: 10px;
+        }
+      }
+
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        opacity: 0;
+
+        &:checked ~ .calc-item {
+          &__border {
+            border-color: $success;
+            box-shadow: 0 0 0 vw(8) #e1f7f0;
+
+            @include media("m") {
+              box-shadow: 0 0 0 4px #e1f7f0;
+            }
+          }
+
+          &__text {
+            font-weight: 700;
+            color: $success;
+          }
+        }
+      }
+    }
+
+    &__border {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      border: 1px solid #9f9f9f;
+      transition: $transition;
+    }
+
+    &__image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    &__name {
+      position: absolute;
+      bottom: vw(-50);
+      left: 0;
+      right: 0;
+      width: 100%;
+      text-align: center;
+
+      @include media("m") {
+        bottom: -30px;
+      }
+    }
+
+    &__text {
+      transition: $transition;
+    }
+
+    &__icon {
+      width: vw(58);
+      height: vw(58);
+
+      @include media("m") {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    &__options {
+      &--row {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include media("xs") {
+          flex-direction: column;
+        }
+
+        .calc-item__option {
+          margin-bottom: vw(25);
+
+          &:not(:last-child) {
+            margin-right: vw(60);
+
+            @include media("xs") {
+              margin-right: 0;
+              margin-bottom: 10px;
+            }
+          }
+
+          &:last-child {
+            @include media("xs") {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &__option {
+      &:not(:last-child) {
+        margin-bottom: vw(20);
+
+        @include media("m") {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  &__button {
+    &:not(:last-child) {
+      @include media("s") {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__notification {
+    margin-bottom: vw(118);
+
+    @include media("m") {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: vw(60);
+
+    @include media("m") {
+      margin-bottom: 30px;
+    }
+
+    @include media("s") {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    .switcher {
+      flex-shrink: 0;
+    }
+  }
+
+  &__block {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__title {
+    margin-left: vw(40);
+
+    @include media("m") {
+      margin-left: 20px;
+    }
+
+    @include media("s") {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__row {
+    margin-bottom: vw(40);
+
+    @include media("m") {
+      margin-bottom: 30px;
+    }
+  }
+}

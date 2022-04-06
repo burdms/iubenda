@@ -1,0 +1,26 @@
+.compilance {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #cf7463;
+
+  &-indicator {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    &__ring {
+      transform-origin: center;
+      transform: rotate(-90deg);
+      stroke-linecap: round;
+      stroke: #cf7463;
+      transition: $transition;
+    }
+  }
+
+  &__amount {
+    font-size: 1.4em;
+  }
+}

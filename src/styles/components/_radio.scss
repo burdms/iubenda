@@ -1,0 +1,55 @@
+.radio {
+  position: relative;
+  padding-left: vw(65);
+  cursor: pointer;
+
+  @include media("m") {
+    padding-left: 30px;
+  }
+
+  input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked ~ span::after {
+      opacity: 1;
+    }
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: vw(42);
+    height: vw(42);
+    border-radius: 50%;
+    border: 1px solid #b4b4b4;
+
+    @include media("m") {
+      width: 1.5em;
+      height: 1.5em;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: vw(8);
+      height: vw(8);
+      border-radius: 50%;
+      background-color: $success;
+      opacity: 0;
+      transition: $transition;
+
+      @include media("m") {
+        width: 4px;
+        height: 4px;
+      }
+    }
+  }
+}

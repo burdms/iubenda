@@ -1,0 +1,4 @@
+mixin radio(item)
+  label.radio(class=item.className||'')=item.label
+    input(type="radio" name=item.name value=item.value checked=item.checked)
+    span.radio__dot

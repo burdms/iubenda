@@ -1,0 +1,16 @@
+mixin notification({type, className, text, active = false})
+  .notification(class=`notification--${type} ${className} ${active?'active':''}`)
+    .notification-status
+      svg(width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg").notification-status__icon.notification-status__icon--success
+        path(d="M24 46C36.1503 46 46 36.1503 46 24C46 11.8497 36.1503 2 24 2C11.8497 2 2 11.8497 2 24C2 36.1503 11.8497 46 24 46Z" stroke="black")
+        path(d="M13.3829 23.6774L20.755 31L34.8496 17" stroke="black")
+
+      svg(width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg").notification-status__icon.notification-status__icon--warning
+        circle(cx="24" cy="24" r="21.5" stroke="black")
+        path(d="M22.6816 36.8926C22.6816 36.291 22.9688 35.8809 23.543 35.6621C23.707 35.6074 23.8574 35.5801 23.9941 35.5801C24.623 35.5801 25.0469 35.8672 25.2656 36.4414C25.3203 36.6055 25.3477 36.7559 25.3477 36.8926C25.3477 37.5215 25.0469 37.9316 24.4453 38.123C24.2812 38.1777 24.1309 38.2051 23.9941 38.2051C23.3926 38.2051 22.9824 37.918 22.7637 37.3438C22.709 37.1797 22.6816 37.0293 22.6816 36.8926ZM22.9688 31.1914V9.28906H25.0605V31.1914H22.9688Z" fill="black")
+
+    .notification-content
+      p.notification__text!=text
+
+    .notification__close
+      | X

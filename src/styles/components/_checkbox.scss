@@ -1,0 +1,158 @@
+.checkbox {
+  position: relative;
+  padding-left: vw(65);
+
+  @include media("m") {
+    padding-left: 30px;
+  }
+
+  &-tooltip {
+    position: relative;
+    display: none;
+    margin-top: vw(36);
+    margin-left: vw(-43);
+    padding: vw(26) vw(110);
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    color: $warning;
+    background-color: #fff4e6;
+
+    &.active {
+      display: block;
+    }
+
+    @include media("m") {
+      margin-top: 15px;
+      margin-left: -20px;
+      padding: 12px 11px 12px 50px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: vw(-22);
+      left: 0;
+      width: 0;
+      height: 0;
+      border: vw(11) solid;
+      border-color: transparent transparent #fff4e6 #fff4e6;
+
+      @include media("m") {
+        top: -10px;
+        border-width: 5px;
+      }
+    }
+
+    &__icon {
+      position: absolute;
+      top: vw(16);
+      left: vw(26);
+      width: vw(65);
+      height: vw(65);
+
+      @include media("m") {
+        top: 7px;
+        left: 11px;
+        width: 28px;
+        height: 28px;
+      }
+
+      @include media("xs") {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      circle {
+        stroke: $warning;
+      }
+
+      path {
+        fill: $warning;
+      }
+    }
+  }
+
+  input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked ~ .checkbox__checkmark::after {
+      opacity: 1;
+    }
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: vw(42);
+    height: vw(42);
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+
+    @include media("m") {
+      width: 1.5em;
+      height: 1.5em;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: vw(8);
+      left: vw(14);
+      width: vw(7);
+      height: vw(13);
+      border: solid $success;
+      border-width: 0 vw(4) vw(4) 0;
+      transform: rotate(45deg);
+      opacity: 0;
+      transition: $transition;
+
+      @include media("m") {
+        top: 3px;
+        left: 7px;
+        width: 4px;
+        height: 8px;
+        border-width: 0 3px 3px 0;
+      }
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &__more {
+    color: #636262;
+    cursor: pointer;
+  }
+
+  &__help {
+    position: relative;
+    margin-left: vw(52);
+    cursor: pointer;
+
+    @include media("m") {
+      margin-left: calc(10px + 1.5em);
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: vw(-36);
+      transform: translateY(-50%);
+      width: vw(32);
+      height: vw(32);
+
+      @include media("m") {
+        left: calc(-10px - 0.75em);
+        width: 1.5em;
+        height: 1.5em;
+      }
+    }
+  }
+}

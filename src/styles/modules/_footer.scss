@@ -1,0 +1,25 @@
+.footer {
+  padding: vw(56) 0 vw(94);
+
+  @include media("m") {
+    padding: 25px 0 50px;
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    font-weight: 700;
+
+    &:not(:last-child) {
+      margin-right: vw(70);
+
+      @include media("m") {
+        margin-right: 30px;
+      }
+    }
+  }
+}

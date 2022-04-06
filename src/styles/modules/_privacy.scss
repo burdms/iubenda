@@ -1,0 +1,13 @@
+.privacy {
+  &__card {
+    width: vw(384);
+    height: vw(154);
+    margin-bottom: vw(60);
+
+    @include media("m") {
+      width: 176px;
+      height: 70px;
+      margin-bottom: 45px !important;
+    }
+  }
+}
