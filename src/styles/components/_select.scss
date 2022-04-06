@@ -69,5 +69,9 @@
     justify-content: center;
     width: vw(56);
     border-left: 1px solid #eaeaea;
+
+    @include media("s") {
+      width: 20px;
+    }
   }
 }
